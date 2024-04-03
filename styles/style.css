@@ -135,7 +135,7 @@ a {
   margin-bottom: 30px;
  }
  .quote {
-  color: rgba(139, 137, 137, 0.733);
+  color: rgba(185, 185, 185, 0.733);
  }
 .subscribe {
   display: flex;
@@ -164,7 +164,7 @@ input {
 }
 
 @keyframes fade-in {
-  from { scale: .8; opacity: 0.8;}
+  from { scale: .8; opacity: 0.5;}
   to { scale: 1; opacity: 1;}
 } 
 
@@ -190,6 +190,10 @@ input {
   margin-right: auto;
   width: 80%;
  }
+ .container-card{
+  animation: fade-in linear;
+  animation-timeline: view();
+}
   
  }
  @media (max-width: 480px) {
@@ -210,6 +214,10 @@ input {
   margin-right: auto;
   width: 80%;
  }
+ .container-card{
+  animation: fade-in linear;
+  animation-timeline: view();
+}
  }
  @media (max-width:914px) {
   .button {
@@ -226,4 +234,8 @@ input {
     margin-right: auto;
     width: 80%;
    }
+   .container-card{
+    animation: fade-in linear;
+    animation-timeline: view();
+  }
  }
