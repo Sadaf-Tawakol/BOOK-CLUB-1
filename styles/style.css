@@ -2,8 +2,8 @@ body {
   width: 100%;
   margin: 0;
   background-color: black !important;
-  color: beige;
-  padding-bottom: 50px;
+  color: rgb(255, 255, 255);
+  
   
 }
 /*header styles */
@@ -16,37 +16,42 @@ body {
 }
 
 .intro {
-  width: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 100%;
   margin-left: 3%;
-  color: bisque;
+  color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(110, 109, 109, 0.507);
 
 }
-button {
+button, .button {
   padding: 10px 20px 10px 20px;
-  width: 40%;
+  width: 20%;
   border-radius: 50px !important;
   box-shadow: 0 0 10px rgba(117, 116, 116, 0.664);
   border: none;
   background-color: #712cf9;
-  color:bisque ;
+  color:rgb(255, 255, 255) ;
+  transition: all 0.5s;
 
   
 }
+button:hover {
+  color: #580af5;
+  background-color: rgba(255, 255, 255, 0.678);
+}
 h1 {
   font-size: 55px;
-  color: beige !important;
+  color: rgb(255, 255, 255) !important;
   
 }
 p {
 font-size: 20px;
 padding: 5px;
-color: beige ;
+color: rgb(255, 255, 255) ;
 }
 .navbar {
   background-color: #712cf9 !important;
@@ -63,7 +68,7 @@ a:hover {
   border-radius: 6px;
 }
 a {
-  color: beige !important;
+  color: rgb(255, 255, 255) !important;
 }
 .active {
   color: rgba(255, 255, 255, 0.534) !important;
@@ -105,8 +110,8 @@ a {
   justify-content: center;
   align-items: center;
   gap:30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 
  }
  .cards img {
@@ -130,7 +135,7 @@ a {
   margin-bottom: 30px;
  }
  .quote {
-  color: rgba(126, 119, 119, 0.507);
+  color: rgba(139, 137, 137, 0.733);
  }
 .subscribe {
   display: flex;
@@ -138,6 +143,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 input {
   border-radius: 5px;
@@ -150,20 +156,74 @@ input {
   background-color: #712cf9;
   margin-left: 20px;
 }
+/*animation*/
+
+.container-card{
+  animation: fade-in linear;
+  animation-timeline: view();
+}
+
+@keyframes fade-in {
+  from { scale: .8; opacity: 0.8;}
+  to { scale: 1; opacity: 1;}
+} 
 
 
 
+ /*media qeuries*/
 
  @media (max-width: 768px) {
   .cards {
     flex-wrap: wrap;
   }
   .intro {
-    width: 95%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
+ .button {
+  width: 58%;
+  align-self: flex-start;
+ } 
+ .quote {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ }
+  
  }
  @media (max-width: 480px) {
   .cards {
     flex-wrap: wrap;
   }
+  .intro {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .button {
+  width: 68%;
+  align-self: flex-start;
+ } 
+ .quote {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ }
+ }
+ @media (max-width:914px) {
+  .button {
+    width: 40%;
+    align-self: flex-start;
+  }
+  .intro {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+   }
  }
