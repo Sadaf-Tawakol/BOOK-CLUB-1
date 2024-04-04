@@ -102,6 +102,11 @@ a {
   width: 130px;
   padding: 10px 10px 10px 10px;
 }
+h2{
+  color: white !important;
+  margin-left: 1.5%;
+  margin-top: 50px !important;
+}
 .h1 {
   border-bottom: 2px solid #712cf9;
 }
@@ -133,6 +138,15 @@ a {
  .container-card {
   background-color: rgba(65, 64, 64, 0.185);
   margin-bottom: 30px;
+  border: 1px solid rgba(117, 117, 117, 0.541);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 8px;
+ }
+ .container-card img {
+  width: 95%;
+  align-self: center;
  }
  .quote {
   color: rgba(185, 185, 185, 0.733);
@@ -156,7 +170,7 @@ input {
   background-color: #712cf9;
   margin-left: 20px;
 }
-/*animation*/
+/*animation
 
 .container-card{
   animation: fade-in linear;
@@ -164,9 +178,10 @@ input {
 }
 
 @keyframes fade-in {
-  from { scale: .8; opacity: 0.5;}
+  from { scale: .8; opacity: 0.7;}
   to { scale: 1; opacity: 1;}
 } 
+*/
 
 
 
