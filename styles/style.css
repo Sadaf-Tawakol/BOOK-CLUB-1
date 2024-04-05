@@ -142,6 +142,7 @@ h2{
   flex-direction: column;
   width: 100%;
   padding-top: 8px;
+  box-shadow: 3px 3px 10px rgb(49, 49, 49);
  }
  .container-card img {
   width: 95%;
@@ -212,6 +213,10 @@ input {
   margin-right: auto;
   width: 80%;
  }
+ .intro-2 {
+  justify-content: space-between;
+  align-items: baseline;
+ }
  }
  @media (max-width: 480px) {
   .cards {
@@ -231,6 +236,10 @@ input {
   margin-right: auto;
   width: 80%;
  }
+ .intro-2 {
+  justify-content: space-between;
+  align-items: baseline;
+ }
  }
  @media (max-width:914px) {
   .button {
@@ -246,5 +255,9 @@ input {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+   }
+   .intro-2 {
+    justify-content: space-between;
+    align-items: baseline;
    }
  }
