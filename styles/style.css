@@ -104,7 +104,6 @@ a {
 }
 h2{
   color: rgb(240, 238, 238) !important;
-  margin-left: 1.5%;
   margin-top: 50px !important;
 }
 .h1 {
@@ -170,6 +169,14 @@ input {
   background-color: #712cf9;
   margin-left: 20px;
 }
+.intro-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
 /*animation
 
 .container-card{
@@ -205,10 +212,6 @@ input {
   margin-right: auto;
   width: 80%;
  }
- h2 {
-  margin-left: 4%;
- }
-  
  }
  @media (max-width: 480px) {
   .cards {
@@ -228,9 +231,6 @@ input {
   margin-right: auto;
   width: 80%;
  }
-h2 {
-  margin-left:7%;
- }
  }
  @media (max-width:914px) {
   .button {
@@ -247,7 +247,4 @@ h2 {
     margin-right: auto;
     width: 80%;
    }
-  h2 {
-    margin-left: 3%;
-  }
  }
