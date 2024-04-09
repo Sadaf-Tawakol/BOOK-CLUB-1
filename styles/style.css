@@ -29,7 +29,7 @@ body {
 }
 button, .button {
   padding: 10px 20px 10px 20px;
-  width: 100%;
+  width: 20%;
   border-radius: 50px !important;
   box-shadow: 0 0 10px rgba(117, 116, 116, 0.664);
   border: none;
@@ -38,6 +38,9 @@ button, .button {
   transition: all 0.5s;
 
   
+}
+.button-first {
+  width: 100%;
 }
 button:hover {
   color: #580af5;
