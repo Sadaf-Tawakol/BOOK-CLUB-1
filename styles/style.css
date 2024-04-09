@@ -29,7 +29,7 @@ body {
 }
 button, .button {
   padding: 10px 20px 10px 20px;
-  width: 20%;
+  width: 100%;
   border-radius: 50px !important;
   box-shadow: 0 0 10px rgba(117, 116, 116, 0.664);
   border: none;
@@ -105,6 +105,8 @@ a {
 h2{
   color: rgb(240, 238, 238) !important;
   margin-top: 50px !important;
+ text-align: center;
+ margin-bottom: 30px !important;
 }
 .h1 {
   border-bottom: 2px solid #712cf9;
@@ -170,9 +172,7 @@ input {
   margin-left: 20px;
 }
 
-h2 {
-  margin-left: 2%;
-}
+
 /*animation
 
 .container-card{
@@ -193,6 +193,7 @@ h2 {
  @media (max-width: 768px) {
   .cards {
     flex-wrap: wrap;
+    width: 90%;
   }
   .intro {
     width: 80%;
@@ -210,6 +211,9 @@ h2 {
  }
  h2 {
   margin-left: 4%;
+ }
+ .container-card {
+  width: 80%;
  }
   
  }
