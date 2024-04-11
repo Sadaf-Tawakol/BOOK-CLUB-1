@@ -183,7 +183,7 @@ footer {
   background-color: #241d41e7;
   padding: 10px;
   color: white;
-  max-width: 1600px;
+  max-width: 2000px;
   width:100%;
 }
 
@@ -201,6 +201,14 @@ footer {
   .container__right {
     grid-template-columns: repeat(2, 1fr);
   }
+  .card {
+    flex-direction: column;
+    font-size: smaller;
+    gap: 10px;
+  }
+  .card img {
+    width: 15%;
+  }
 }
 
 @media (width < 750px) {
@@ -213,6 +221,13 @@ footer {
     justify-content: center;
     align-items: center;
     
+  }
+  .card {
+    flex-direction: column;
+    font-size: smaller;
+  }
+  .card img {
+    width: 15%;
   }
   header {
     flex-wrap: wrap;
