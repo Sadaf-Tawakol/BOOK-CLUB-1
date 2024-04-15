@@ -1,7 +1,10 @@
 /*home page style!!!!!!!!*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 :root {
   --primary-color: #662eed;
   --primary-color-dark: #680c8d;
+  --primary-color-blue: rgb(2, 117, 138);
+  --color-light:rgb(7, 173, 202) ;
 }
 body {
   width: 100%;
@@ -57,8 +60,11 @@ button{
   transition: all 0.2s;
 }
 a {
-  text-decoration: none !important;
+  
   font-size: larger;
+}
+#link {
+  text-decoration: none;
 }
 
 
@@ -75,7 +81,7 @@ font-size: 20px;
 padding: 5px;
 color: rgb(255, 255, 255) ;
 }
-.navbar {
+.index-navbar {
   background: linear-gradient(
     to right,
     var(--primary-color),
@@ -192,9 +198,10 @@ input {
  
 
 }
-.submit {
-  background-color: #662eed;
-  margin-left: 20px;
+
+footer {
+  background-color: rgba(66, 65, 65, 0.404)!important;
+  color: white !important;
 }
 
 
@@ -279,5 +286,6 @@ h2 {
     margin-left: 3%;
   }
  }
- /*portfolio page styles!!!!!*/
+ /*about page styles!!!!!*/
+
 
