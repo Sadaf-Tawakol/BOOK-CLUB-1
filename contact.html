@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      width: 98%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: sans-serif;
+    }
+    .main-container {
+      background-color: rgb(241, 241, 247);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.185);
+      width: 80%;
+      height: 83%;
+      display: flex;
+      gap: 60px;
+      justify-content: flex-end;
+      align-items: center;
+
+    }
+    .sub-container {
+      background-color: brown;
+      width: 35%;
+      height: 55%;
+      z-index: 2;
+      padding: 15px 0 20px 20px;
+      
+    }
+    .sub-container2 {
+      background-color: black;
+      position: relative;
+      padding: 20px;
+    }
+    .sub-container1 {
+      height: 80%;
+      width: 40%;
+      background-color: white;
+      padding: 0px 40px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.116);
+    }
+    .sub {
+      height: 83%;
+      width: 13%;
+      background-color: rgb(145, 152, 247);
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .label-contain {
+      width: 10%;
+      height: 10%;
+      background-color: rgb(145, 152, 247);
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      margin: 0;
+    }
+    .container-content2 {
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      font-size: 13px;
+      color: white;
+      height: 90%;
+      line-height: 30px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.4s;
+    }
+    a:hover {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.644);
+
+    }
+    a:focus {
+     color: rgba(255, 255, 255, 0.644);
+    }
+    i {
+      font-size: 20px;
+      margin-right: 13px;
+    }
+    form {
+      width: 100%;
+      box-sizing: border-box;
+
+    }
+    form input {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    form input[type="text"],  form input[type="email"] {
+      border: none;
+      border-bottom: 2px solid #8088fd;
+      width: 98.8%;
+      outline: none;
+      height: 30px;
+    }
+    form input[type="text"]:focus,  form input[type="email"]:focus {
+      border-bottom: 2px solid  #000000;
+    }
+    form input[type="submit"] {
+      border: none;
+      outline: none;
+      height: 40px;
+      color: rgb(255, 255, 255);
+      background-color: #000000;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+    form input[type="submit"]:hover {
+      background-color: #8088fd;
+
+    }
+    .sub-container1 p {
+      font-size: small;
+      color: rgba(92, 89, 89, 0.822);
+      font-weight: bold;
+
+    }
+    .sub-container1 h1 {
+      font-weight: bold;
+    }
+    .sub p {
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    
+   @media (max-width: 850px) {
+    body {
+      font-size: smaller;
+      height: 100%;
+      display: flex;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .main-container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.301);
+      height: 100%;
+      position: relative;
+      gap:100px;
+
+    }
+    .sub {
+      height: 100%;
+      position: absolute;
+    }
+    .sub p {
+      opacity: 0;
+    }
+    .sub-container1 {
+      height: 80%;
+      padding: 20px 30px;
+      width: 70%;
+      margin-top: 80px;
+    }
+    .sub {
+      width: 25%;
+    }
+    .label-contain {
+      opacity: 0;
+    }
+    .container-content2 {
+      
+      font-size: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 85%;
+      height: 85%;
+      padding: 40px 0;
+      
+      
+    }
+    .sub-container2 {
+      height: 80%;
+      padding: 0;
+      width: 85.5%;
+      margin-bottom: 80px;
+    }
+    form input[type="text"],  form input[type="email"] {
+      height: 10px;
+    }
+    
+   }
+  </style>
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="sub-container sub-container1">
+      <h1>Contact Us</h1>
+      <p>Feel free to contact us anytime. we will get back to you as soon as we can</p>
+      <form action="#">
+        <input type="text" placeholder="Name"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="text" placeholder="Massage"> <br>
+        <input type="submit" name="Send">
+      </form>
+    </div>
+    <div class="sub-container sub-container2">
+      <div class="container-content2">
+        <h2>Info</h2>
+        <p>
+          <i class="fa-regular fa-envelope" style="color: #969df8;"></i> <a href="mailto:tawakol.s@hotmail.com">tawakol.s@hotmail.com</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone" style="color: #969df8;" ></i> <a id="tel" href="tel:+93790540624">+93790540624</a>
+        </p>
+        <p>
+          <i class="fa-brands fa-telegram" style="color: #969df8;"></i> <a href="https://t.me/user-sadaf">@user-sadaf</a>
+        </p>
+        <p>
+          <i class="fa-regular fa-clock" style="color: #969df8;"></i> 8:00 A.M to 8:00 P.M  
+        </p>
+      </div>
+      <div class="label-contain"></div>
+    </div>
+    <div class="sub">
+      <p>BOOK CLUB 📚</p>
+
+    </div>
+  </div>
+  
+</body>
+</html>
