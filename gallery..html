@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0.452)), url(images/p1.jpg) ;
+      background-position: center;
+      margin: 0;
+    }
+    h1 {
+      font-size: 35px;
+      position: relative;
+      margin: 10px 0 40px 0;
+      text-align: center;
+    }
+    h1::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 3px;
+      background-color: rgb(122, 43, 226);
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%);
+      animation: animate 4s linear infinite;
+    }
+    #text {
+      color: rgb(122, 43, 226);
+    }
+    @keyframes animate {
+      0%{
+        width: 200px;
+
+      }
+      50% {
+        width: 300px;
+      }
+      100% {
+        width: 200px;
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 20px 0 20px;
+    }
+    .box {
+      display: flex;
+      
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .box-image {
+      width: 32.5%;
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: white ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(78, 16, 150);
+      height: 50px;
+      width: 100%;
+    }
+    @media (max-width: 631px) {
+      .box {
+       flex-wrap: wrap;
+      }    
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="heading">
+     <div class="head">  <h1>Books <span id="text"> Gallery </span></h1>  
+    </div> 
+    <div class="box">
+      <div class="box-images">
+        <img src="images/p16.jpg" alt="gallery image">
+        <img src="images/p1.jpg" alt="gallery images">
+        <img src="images/p2.jpg" alt="gallery images">
+        <img src="images/p3.jpg" alt="gallery images">
+        <img src="images/p4.jpg" alt="gallery images">
+        <img src="images/p6.jpg" alt="gallery images">
+      </div>
+      <div class="box-images">
+        <img src="images/p17.jpg" alt="gallery image">
+        <img src="images/p7.jpg" alt="gallery images">
+        <img src="images/p8.jpg" alt="gallery images">
+        <img src="images/p10.jpg" alt="gallery images">
+        <img src="images/p11.jpg" alt="gallery images">
+        <img src="images/p12.jpg" alt="gallery images">
+      </div>
+      <div class="box-images">
+        <img src="images/p18.jpg" alt="GAllery image">
+        <img src="images/p13.jpg" alt="gallery images">
+        <img src="images/p14.jpg" alt="gallery images">
+        <img src="images/p15.jpg" alt="gallery images">
+        <img src="images/p5.jpg" alt="gallery images">
+        <img src="images/p9.jpg" alt="gallery images">
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  &copy;All right reserved.
+</footer>
+   
+</body>
+</html>
