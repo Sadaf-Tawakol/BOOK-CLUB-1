@@ -233,6 +233,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 100%;
   }
   .list li a {
     color: black;
@@ -254,31 +255,48 @@
     .nav-container {
       z-index: 100;
     }
+    
     .header {
       z-index: 50;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .btn-box {
+      width: 100%;
+    }
+    .home {
+      z-index: 90;
     }
     .about, .home {
-      grid-template-columns: repeat(1, 1fr);
-      align-items: center;
-      justify-content: center;
-     
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px;
     }
     .home, .img-about {
       margin-top: 70px;
     }
+    .img-box, .about-content {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .list {
+      padding-right: 30px;
+    }
     .about {
-      margin-top: 0;
+      gap: 70px;
     }
     .img-about, .img-box {
-      width: 80%;
+      width: 60%;
       margin-left: auto;
       margin-right:auto ;
     }
     .home-content, .about-content {
       width: 100%;
+     
     }
     .btn-1, .btn-2 {
-      padding: 10px 20px;
+      padding: 11px 17px;
     }
 
    }
